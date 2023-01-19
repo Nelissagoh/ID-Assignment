@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wordy</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/43ee07203e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="start-page">
+            <div class="name">
+                <h1>WORDIE</h1>
+            </div>
+            <!-- Start button -->
+            <div class="start-btn">
+                <a href="game.html">
+                <button>Start</button>
+                </a>
+            </div>
+            <!-- SIGN-UP/Login_IN page -->
+                <div class="b">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up/Login in</button>
+                </div>
+                <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+            
+                <div class="form">
+                    <h2 id="header">SIGN UP</h2>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-box" id="namebox">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                                <input  type="text" placeholder="Username">
+                            </div>
+
+                            <div class="input-box">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input  type="email" placeholder="Email">
+                            </div>
+
+                            <div class="input-box">
+                                <i class="fa-solid fa-lock"></i>
+                                <input  type="password" placeholder="Password">
+                            </div>
+                            <p>Forget password <a href="#">Click Here!</a></p>
+                        </div>
+                        <div class="btn">
+                            <button type="button" id="signupbtn">Sign up</button>
+                            <button type="button" id="loginbtn" class="not">Login in</button>
+
+                        </div>
+                    </form>
+                </div>
+
+
+           
+            
+        </section>
+        <script src="Javascript.js">
+        </script>
+    </body>
+</html>
