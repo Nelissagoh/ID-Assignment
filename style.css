@@ -180,5 +180,15 @@ button {
   .start-btn{
     text-align: center;
   }
+
+  /* phone view for cover page */
+  @media(max-width: 700px)
+  {
+    .name{
+        font-size: 40px;
+        padding-top: 200px;
+        
+    }
+  }
    
 
