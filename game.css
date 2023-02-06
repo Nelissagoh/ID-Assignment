@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #87CEFA;
+}
+
+/* Game's White Box */
+.wrapper {
+    width: 430px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.wrapper h1 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper content {
+    margin: 25px 25px 35px;
+}
+
+.content .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Letters Input By Player */
+.inputs input {
+    height: 57px;
+    width: 56px;
+    margin: 4px;
+    color: #87CEFA;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+}
+
+.inputs input:first-child {
+    margin-left: 0px;
+}
+
+.content .details {
+    margin: 20px 0 25px;
+}
+
+/* Hint, Guesses Left, Wrong Letters */
+.details p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* Reset Button */
+.content .reset {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px;
+    background: #87CEFA;
+    border-radius: 5px;
+}

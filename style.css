@@ -4,7 +4,7 @@
     font-family: 'Fredoka One', cursive;
 }
 
-.start-page{
+.start-page {
     min-height: 100vh;
     width: 100%;
     background-image:url(Background.jpg);
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.name{
+.name {
     color: #F4D03F;
     text-shadow: 2px 2px #424949;
     text-align: center;
@@ -28,13 +28,10 @@
     50% { transform: rotate(0eg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-  }
+}
 
-
-    
-
-/* SIGN UP BUTTON */
-.form{
+/* Sign Up Button */
+.form {
    width: 90%;
    max-width: 450px;
    position: absolute;
@@ -46,14 +43,14 @@
    text-align: center;
 }
 
-.form h2{
+.form h2 {
     font-size: 30px;
     margin-bottom: 60px;
     color:#87CEFA ;
     position: relative;
 }
 
-.form h2::after{
+.form h2::after {
     content:'';
     width: 30px;
     height: 4px;
@@ -65,7 +62,7 @@
     transform: translate(-50%);
 }
 
-.input-box{
+.input-box {
     background-color:#eaeaea;
     margin: 15px 0;
     border-radius: 3px;
@@ -76,7 +73,7 @@
     overflow: hidden;
 }
 
-input{
+input {
     width: 100%;
     background: transparent;
     border:0;
@@ -84,27 +81,28 @@ input{
     padding: 18px 15px;
 }
 
-.input-box i{
+.input-box i {
     margin-left: 15px;
     color: #999;
 }
 
-form p{
+form p {
     text-align: left;
     font-size: 14px;
 }
-form p a{
+
+form p a {
     text-decoration: none;
     color:#87CEFA ;
 }
 
-.btn{
+.btn {
     width: 100%;
     display: flex;
     justify-content:space-between;
 }
 
-.btn button{
+.btn button {
     flex-basis: 49%;
     background:#87CEFA ;
     color: white;
@@ -116,22 +114,21 @@ form p a{
     transition: background 1s;
 }
 
-.input-group{
+.input-group {
     height: 280px;
 }
 
-.btn button.not{
+.btn button.not {
     background:#eaeaea;
     color:white;
 }
 
-
-/* Sign in btn before the sign up/login page pops up */
-.b{
+/* Sign In Button (Before Sign Up/Log In Page Shows Up) */
+.b {
     text-align: center;
 }
 
-/* Set a style for all buttons */
+/* Style For All Buttons */
 button {
     background-color: #04AA6D;
     color: white;
@@ -142,12 +139,13 @@ button {
     width: 140px;
     opacity: 0.9;
     text-align: center;
-  }
+}
   
-  button:hover {
+button:hover {
     opacity:1;
-  }
-/* The Modal (background) */
+}
+
+/* The Modal (Background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -159,36 +157,33 @@ button {
     overflow: auto; /* Enable scroll if needed */
     background-color: #474e5d;
     padding-top: 50px;
-  }
+}
   
-  /* Modal Content/Box */
-  .modal-content {
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-  }
+}
   
-  /* Style the horizontal ruler */
-  hr {
+/* Horizontal Ruler */
+hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
-  }
+}
 
-
-  /* start btn */
-  .start-btn{
+/* Start Button */
+.start-btn{
     text-align: center;
-  }
+}
 
-  /* phone view for cover page */
-  @media(max-width: 700px)
-  {
-    .name{
+/* Mobile View Of Cover Page */
+@media(max-width: 700px)
+{
+    .name {
         font-size: 40px;
         padding-top: 200px;
         
     }
-  }
-   
-
+}
