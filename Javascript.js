@@ -28,6 +28,7 @@ signupbtn.onclick = function(){
     loginbtn.classList.add("not");
 }
 
+const apikey = "63dfc7033bc6b255ed0c46b9";
 
   //[STEP 1]: Create our submit form listener
   $("#submitbtn").on("click", function (e) {
@@ -46,7 +47,7 @@ signupbtn.onclick = function(){
 
         //[STEP 3]: get form values when user clicks on submit
     //Adapted from restdb api
-    let jsondata = {
+    let data = {
       "username": username,
       "email": email,
       "password": password
@@ -73,7 +74,24 @@ $.ajax(settings).done(function (response) {
   
 
 
+var jsondata = {"field1": "xyz","field2": "abc"};
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://registration-e380.restdb.io/rest/username",
+  "method": "POST",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": "<your CORS apikey here>",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": JSON.stringify(jsondata)
+}
 
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 
 
 
