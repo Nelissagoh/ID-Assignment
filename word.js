@@ -1,66 +1,66 @@
 const wordList = [
     {
         word: "javascript",
-        hint: "programming language"
+        hint: "Programming Language"
     } ,
 
     {
         word: "cello",
-        hint: "musical instrument"
+        hint: "Musical Instrument"
     } ,
 
     {
         word: "pluto",
-        hint: "planet"
+        hint: "Planet"
     } ,
 
     {
         word: "aluminium",
-        hint: "metal"
+        hint: "Metal"
     } ,
 
     {
         word: "nitrogen",
-        hint: "type of gas"
+        hint: "Type Of Gas"
     } ,
 
     {
         word: "strawberry",
-        hint: "fruit"
+        hint: "Fruit"
     } ,
 
     {
         word: "barney",
-        hint: "character of a children tv show"
+        hint: "Character Of A Children TV Show"
     } ,
 
     {
         word: "bitcoin",
-        hint: "type of currency"
+        hint: "Related To Cryptocurrency"
     } ,
 
     {
         word: "qatar",
-        hint: "country"
+        hint: "Country"
     } ,
 
     {
         word: "afrikaans",
-        hint: "language"
+        hint: "Language"
     } ,
 
     {
         word: "einstein",
-        hint: "scientist"
+        hint: "Scientist"
     } ,
 
     {
         word: "disneyland",
-        hint: "amusement park"
+        hint: "Amusement Park"
     } ,
 
     {
         word: "hockey",
-        hint: "sport"
+        hint: "Sport"
     }
 ]

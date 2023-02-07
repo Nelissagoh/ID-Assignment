@@ -174,7 +174,7 @@ hr {
 }
 
 /* Start Button */
-.start-btn{
+.start-btn {
     text-align: center;
 }
 
@@ -184,6 +184,5 @@ hr {
     .name {
         font-size: 40px;
         padding-top: 200px;
-        
     }
 }
