@@ -6,10 +6,6 @@ let namebox=document.getElementById("namebox")
 let header=document.getElementById("header")
 let submitbtn=document.getElementById("submitbtn")
 
-//a msg will pop up when submit btn is press
-function Alert(){
-  alert("Welcome!");
-}
 
 
 //click btn function for login btn
@@ -28,24 +24,38 @@ signupbtn.onclick = function(){
     loginbtn.classList.add("not");
 }
 
+$(document).ready(function () {
+
 const apikey = "63dfc7033bc6b255ed0c46b9";
 
   //[STEP 1]: Create our submit form listener
   $("#submitbtn").on("click", function (e) {
+    console.log("Submitted");
+
     //prevent default action of the button 
     e.preventDefault()
-  });
 
-
-      //[STEP 2]: let's retrieve form data
+    //[STEP 2]: let's retrieve form data
     //for now we assume all information is valid
     //you are to do your own data validation
     let username = $("#n").val();
     let email = $("#e").val();
     let password = $("#p").val();
 
+  //Get all documents from the username collection
+  var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://registration-e380.restdb.io/rest/username",
+  "method": "GET",
+  "headers": {
+    "content-type": "application/json",
+    "x-apikey": apikey,
+    "cache-control": "no-cache"
+  },
+}
 
-        //[STEP 3]: get form values when user clicks on submit
+    //get form values when user clicks on submit
     //Adapted from restdb api
     let data = {
       "username": username,
@@ -53,28 +63,6 @@ const apikey = "63dfc7033bc6b255ed0c46b9";
       "password": password
     };
 
-//Get all documents from the username collection
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://registration-e380.restdb.io/rest/username",
-  "method": "GET",
-  "headers": {
-    "content-type": "application/json",
-    "x-apikey": "<your CORS apikey here>",
-    "cache-control": "no-cache"
-  }
-}
-
-
-//[STEP 5]: Send our ajax request over to the DB and print response of the RESTDB storage to console.
-$.ajax(settings).done(function (response) {
-  console.log(response)
-});
-  
-
-
-var jsondata = {"field1": "xyz","field2": "abc"};
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -82,16 +70,26 @@ var settings = {
   "method": "POST",
   "headers": {
     "content-type": "application/json",
-    "x-apikey": "<your CORS apikey here>",
+    "x-apikey": apikey,
     "cache-control": "no-cache"
   },
   "processData": false,
-  "data": JSON.stringify(jsondata)
-}
+  "data": JSON.stringify(data),
+  "beforeSend": function(){
+    $("#submitbtn").prop( "disabled", true);
+    $("#add-contact-form").trigger("reset");
+  }
+};
 
 $.ajax(settings).done(function (response) {
-  console.log(response);
+  console.log("Account created successfully");
+  window.location.href='../html/index.html';
 });
+
+  })
+
+});
+
 
 
 
