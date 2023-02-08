@@ -77,13 +77,12 @@ var settings = {
   "data": JSON.stringify(data),
   "beforeSend": function(){
     $("#submitbtn").prop( "disabled", true);
-    $("#add-contact-form").trigger("reset");
+    $("#form").trigger("reset");
   }
 };
 
 $.ajax(settings).done(function (response) {
   console.log("Account created successfully");
-  window.location.href='../html/index.html';
 });
 
   })
