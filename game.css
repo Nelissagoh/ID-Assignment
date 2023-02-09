@@ -1,12 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #87CEFA;
+    background: #87cefa;
 }
 
-/* Game's White Box */
 .wrapper {
     width: 430px;
     background: #fff;
@@ -20,7 +26,7 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.wrapper content {
+.wrapper .content {
     margin: 25px 25px 35px;
 }
 
@@ -36,12 +42,11 @@ body {
     justify-content: center;
 }
 
-/* Letters Input By Player */
 .inputs input {
     height: 57px;
     width: 56px;
     margin: 4px;
-    color: #87CEFA;
+    color: #87cefa;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -59,21 +64,19 @@ body {
     margin: 20px 0 25px;
 }
 
-/* Hint, Guesses Left, Wrong Letters */
 .details p {
     font-size: 19px;
     margin-bottom: 10px;
 }
 
-/* Reset Button */
-.content .reset {
+.content .resetbutton {
     width: 100%;
     cursor: pointer;
     outline: none;
     border: none;
     color: #fff;
     font-size: 17px;
-    padding: 15px;
-    background: #87CEFA;
+    padding: 15px 0;
+    background: #87cefa;
     border-radius: 5px;
 }
