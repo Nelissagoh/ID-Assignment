@@ -13,12 +13,14 @@ body {
     background: #87cefa;
 }
 
+/* White Box For The Game */
 .wrapper {
     width: 430px;
     background: #fff;
     border-radius: 10px;
 }
 
+/* Texts Inside The White Box */
 .wrapper h1 {
     font-size: 25px;
     font-weight: 500;
@@ -28,6 +30,14 @@ body {
 
 .wrapper .content {
     margin: 25px 25px 35px;
+}
+
+/* Mobile View For The Game */
+@media (max-width: 700px) {
+    .wrapper {
+        width: 330px;
+        border-radius: 5px;
+    }
 }
 
 .content .typinginput {
@@ -64,11 +74,13 @@ body {
     margin: 20px 0 25px;
 }
 
+/* Hint, Remaining Guesses, Wrong Letters */
 .details p {
     font-size: 19px;
     margin-bottom: 10px;
 }
 
+/* Reset Button */
 .content .resetbutton {
     width: 100%;
     cursor: pointer;

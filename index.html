@@ -33,67 +33,67 @@
             </div>
 
             <!-- Sign Up/Log In Page -->
-                <div class = "b">
-                    <button onclick = "document.getElementById('id01').style.display = 'block'" style = "width:auto;"> Sign Up/Log In </button>
-                </div>
+            <div class = "b">
+                <button onclick = "document.getElementById('id01').style.display = 'block'" style = "width:auto;"> Sign Up/Log In </button>
+            </div>
 
-                <div id = "id01" class = "modal">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <form class="modal-content" action="/action_page.php">
-            
-                <div class="form">
-                    <h2 id="header">SIGN UP</h2>
-                    <form action="" id="form"> 
+            <div id = "id01" class = "modal">
+            <span onclick = "document.getElementById('id01').style.display = 'none'" class = "close" title = "Close Modal"> &times; </span>
+            <form class = "modal-content" action = "/action_page.php">
+        
+            <div class = "form">
+                <h2 id = "header"> SIGN UP </h2>
+                <form action = "" id = "form"> 
+                    
+                    <div class = "input-group">
+                        <div class = "input-box" id = "namebox">
+                            <i class = "fa-solid fa-id-card-clip"> </i>
+                            <input type = "text" id = "n" placeholder = "Username" required>
+                        </div>
+
+                        <div class = "input-box">
+                            <i class = "fa-regular fa-envelope"> </i>
+                            <input type = "email" id = "e" placeholder = "Email" required>
+                        </div>
+
+                        <div class = "input-box">
+                            <i class = "fa-solid fa-lock"> </i>
+                            <input type = "password" id = "p" placeholder = "Password" required>
+                        </div>
                         
-                        <div class="input-group">
-                            <div class="input-box" id="namebox">
-                                <i class="fa-solid fa-id-card-clip"></i>
-                                <input  type="text" id="n" placeholder="Username" required>
-                            </div>
+                        <button type = "button" id = "submitbtn"> Submit </button>
 
-                            <div class="input-box">
-                                <i class="fa-regular fa-envelope"></i>
-                                <input  type="email" id="e" placeholder="Email" required>
-                            </div>
-
-                            <div class="input-box">
-                                <i class="fa-solid fa-lock"></i>
-                                <input  type="password" id="p" placeholder="Password" required>
-                            </div>
-                            
-                            <button type="button" id="submitbtn">Submit </button>
-                            <div>
-                                <lottie-player
-                                autoplay
-                                controls
-                                loop
-                                mode="normal"
-                                style="width: 320px"
-                                >
-                                </lottie-player>
-                            </div>
-                                
-                            
+                        <div>
+                            <lottie-player
+                            autoplay
+                            controls
+                            loop
+                            mode = "normal"
+                            style = "width: 320px">
+                            </lottie-player>
                         </div>
-                        <div class="btn">
-                            <button type="button" id="signupbtn">Sign up</button>
-                            <button type="button" id="loginbtn" class="not">Login in</button>
-                        </div>
-                    </form>
-                </div>
+                            
+                    </div>
 
+                    <div class = "btn">
+                        <button type = "button" id = "signupbtn"> Sign Up </button>
+                        <button type = "button" id = "loginbtn" class = "not"> Log In </button>
+                    </div>
 
-           
-            
+                </form>
+                
+            </div>
+
         </section>
-        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-        <script src="https://registration-e380.restdb.io/rest/username"></script>
-        <script src="Javascript.js">
-        </script>
-        <script src="login.js"></script>
-        <script src="signup.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+        <script src = "https://code.jquery.com/jquery-3.6.1.js"> </script>
+        <script src = "https://registration-e380.restdb.io/rest/username"> </script>
+        <script src = "Javascript.js"> </script>
+        <script src = "login.js"> </script>
+        <script src = "signup.js"> </script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script src = "https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"> </script>
 
     </body>
+    
 </html>
