@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Fredoka One', cursive;
@@ -142,19 +142,19 @@ button {
 }
   
 button:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 /* The Modal (Background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; /* Hidden By Default */
+    position: fixed; /* Stay In Place */
+    z-index: 1; /* Sit On Top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; /* Full Width */
+    height: 100%; /* Full Height */
+    overflow: auto; /* Enable Scroll If Needed */
     background-color: #474e5d;
     padding-top: 50px;
 }
@@ -162,9 +162,9 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto; /* 5% From The Top, 15% From The Bottom and Center */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; /* Could Be More Or Less, Depending On Screen Size */
 }
   
 /* Horizontal Ruler */
