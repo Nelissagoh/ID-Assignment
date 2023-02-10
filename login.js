@@ -44,7 +44,7 @@ $(document).ready(function () {
               logindata['email']=email;
               logindata['password']=password;
               console.log("Welcome back");
-              window.location.href="game.html"
+              window.location.href='game page/game.html'
               
           }
 
