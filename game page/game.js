@@ -1,3 +1,4 @@
+/* Link It Back To The HTML Code */
 const inputs = document.querySelector(".inputs"),
 resetbutton = document.querySelector(".resetbutton"),
 hint = document.querySelector(".hint span"),
@@ -64,6 +65,7 @@ function initGame(e) {
     typinginput.value = "";
 
     setTimeout(() => {
+        
         /* When Player Found All Letters */
         if (corrects.length === word.length) {
             alert(`Congratulations! You Guessed The Word!`);
