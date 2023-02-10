@@ -27,7 +27,7 @@
 <ul>
 <li> GitHub </li>
 <p> For us to collaborate on the project together.
-Link: </p>
+Link: https://nelissagoh.github.io/ID-Assignment/ </p>
 
 <li> Adobe XD </li>
 <p> To create the wireframes of the game. </p>
