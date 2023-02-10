@@ -8,13 +8,6 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 
 //Add the variable for all the element where we have added the id
 let signupbtn=document.getElementById("signupbtn")

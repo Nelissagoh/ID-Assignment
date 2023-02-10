@@ -62,7 +62,7 @@ $(document).ready(function () {
       //send our ajax request over to the DB and print response of the RESTDB storage to console.
       $.ajax(settings).done(function (response) {
         console.log("Account created successfully");
-        window.location.href="index.html";
+        window.location.href='game page/game.html';
         
       });
     
