@@ -1,57 +1,58 @@
-const apikey = "63dfc7033bc6b255ed0c46b9";
 
-//get form values
-let logindata={
-    "submit": false,
-    "email": null,
-    "password":null
-};
+$(document).ready(function () {
+  const apikey = "63dfc7033bc6b255ed0c46b9";
 
-//Create our submit form listener
-$("#submitbtn").on("click",function(e){
+  //get form values
+  let logindata={
+      "submit": false,
+      "email": null,
+      "password":null
+  };
 
-     //prevent default action of the button 
-    e.preventDefault();
+  //Create our submit form listener
+  $("#submitbtn").on("click",function(e){
 
-    //retrieve form data
-    let email=$("#e").val();
-    let password=$("#p").val();
+      //prevent default action of the button 
+      e.preventDefault();
 
-    //Get all documents from the username collection
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://registration-e380.restdb.io/rest/username",
-        "method": "GET",
-        "headers": {
-          "content-type": "application/json",
-          "x-apikey": apikey,
-          "cache-control": "no-cache"
-        },
-      }
+      //retrieve form data
+      let email=$("#e").val();
+      let password=$("#p").val();
 
-      //check if the email and password entered is the same as what we store in our DB
-      $.ajax(settings).done(function(response){
-        for(var i=0;i<response.length;i++){
-            if(response[i].email==email && response[i].password==password){
-                logindata['submit']=true
-            }
+      //Get all documents from the username collection
+      var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://registration-e380.restdb.io/rest/username",
+          "method": "GET",
+          "headers": {
+            "content-type": "application/json",
+            "x-apikey": apikey,
+            "cache-control": "no-cache"
+          },
         }
 
-        if(logindata['submit']=true){
-            logindata['email']=email;
-            logindata['password']=password;
-            console.log("Welcome back");
+        //check if the email and password entered is the same as what we store in our DB
+        $.ajax(settings).done(function(response){
+          for(var i=0;i<response.length;i++){
+              if(response[i].email==email && response[i].password==password){
+                  logindata['submit']=true
+              }
+          }
 
+          if(logindata['submit']=true){
+              logindata['email']=email;
+              logindata['password']=password;
+              console.log("Welcome back");
+              window.location.href="game.html"
+              
+          }
 
-            const player = document.querySelector('lottie-player');
-            player.load('https://assets8.lottiefiles.com/packages/lf20_WY43rg.json');
-            window.location.href="game.html"
-            
-        }
+          
 
-        
+          
+        });
+
       });
-
     });
       

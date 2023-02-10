@@ -80,8 +80,8 @@ body {
     margin-bottom: 10px;
 }
 
-/* Reset Button */
-.content .resetbutton {
+/* Reset Button and Exit Button */
+.content .buttons {
     width: 100%;
     cursor: pointer;
     outline: none;
@@ -91,4 +91,12 @@ body {
     padding: 15px 0;
     background: #87cefa;
     border-radius: 5px;
+    text-decoration: none;
 }
+
+
+
+
+
+
+

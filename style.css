@@ -20,15 +20,15 @@
     padding-top: 120px;
     padding-bottom: 40px;
     font-size: 60px;
-    animation: tilt-shaking 0.8s infinite;
+    /* animation: tilt-shaking 0.8s infinite; */
 }
-@keyframes tilt-shaking {
+/* @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(5deg); }
-    50% { transform: rotate(0eg); }
+    50% { transform: rotate(0deg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-}
+} */
 
 /* Sign Up Button */
 .form {
@@ -186,3 +186,5 @@ hr {
         padding-top: 200px;
     }
 }
+
+
