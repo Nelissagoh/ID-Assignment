@@ -62,10 +62,3 @@
 <ul>
 <li> Our team received inspiration from the game named Wordle (https://wordlegame.org/). </li>
 </ul>
-
-
-
-
-
-
-
