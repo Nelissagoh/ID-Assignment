@@ -26,8 +26,8 @@
 
 <ul>
 <li> GitHub </li>
-<p> For us to collaborate on the project together </p>
-<p> Link: </p>
+<p> For us to collaborate on the project together.
+Link: </p>
 
 <li> Adobe XD </li>
 <p> To create the wireframes of the game. </p>
